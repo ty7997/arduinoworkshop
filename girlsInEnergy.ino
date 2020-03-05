@@ -10,7 +10,7 @@ void loop() {
   // put your main code here, to run repeatedly:
   int rawvoltage = analogRead(A0); //get the value from the sensor connected to pin A0
   float celsius = ((rawvoltage/1024.0) * 5000 / 10); //converts analog signal to temperature
-  Serial.println(celsius + ".C "); //print out celsius to see what the temp is
+  Serial.println(celsius); //print out celsius to see what the temp is
   
   if(celsius > 25){
     
